@@ -127,7 +127,9 @@ section .title::after {
 .navbar .logo a {
   font-size: 35px;
   font-weight: 600;
-  background: repeating-linear-gradient(
+  color: white;
+  background-color: #fff;
+  /* background: repeating-linear-gradient(
     -45deg,
     red 0%,
     yellow 7.14%,
@@ -136,8 +138,8 @@ section .title::after {
     cyan 28.56%,
     blue 35.7%,
     magenta 42.84%,
-    red 50%
-  );
+    red 50% */
+  /* ); */
   background-size: 600vw 600vw;
   -webkit-text-fill-color: transparent;
   background-clip: border-box;

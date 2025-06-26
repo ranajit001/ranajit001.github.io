@@ -80,3 +80,25 @@ $(document).ready(function () {
     window.location.href = mailtoLink;
   }
 
+
+
+  const resumeButtons = document.querySelectorAll(".resume-button");
+
+  resumeButtons.forEach(button => {
+    button.addEventListener("click", function (e) {
+      // Open viewable PDF in a new tab
+      window.open("https://drive.google.com/file/d/1EM3n4MFzXznLaZkzvXd_wa7dhU6n8CxJ/view", "_blank");
+
+      // Trigger download in background
+      const downloadLink = document.createElement("a");
+      downloadLink.href = "https://drive.google.com/uc?export=download&id=1EM3n4MFzXznLaZkzvXd_wa7dhU6n8CxJ";
+      downloadLink.setAttribute("download", "");
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+
+      // Prevent default <a> behavior (which may duplicate opening)
+      e.preventDefault();
+    });
+  });
+

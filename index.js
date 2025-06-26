@@ -88,7 +88,7 @@ $(document).ready(function () {
     button.addEventListener("click", function (e) {
       // Open viewable PDF in a new tab
       window.open("https://drive.google.com/file/d/1EM3n4MFzXznLaZkzvXd_wa7dhU6n8CxJ/view", "_blank");
-
+``
       // Trigger download in background
       const downloadLink = document.createElement("a");
       downloadLink.href = "https://drive.google.com/uc?export=download&id=1EM3n4MFzXznLaZkzvXd_wa7dhU6n8CxJ";
@@ -102,3 +102,12 @@ $(document).ready(function () {
     });
   });
 
+
+
+  `to update with new redume link command:
+  
+  Replace the old resume links in my JavaScript with my new Google Drive resume links:
+new link :xyz
+Open in new tab: https://drive.google.com/file/d/NEW_FILE_ID/view
+Download in background: https://drive.google.com/uc?export=download&id=NEW_FILE_ID
+Make sure both links use my new file ID.`
